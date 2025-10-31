@@ -1,0 +1,45 @@
+# MarmaraShop robots.txt
+# Allow crawling of public content
+User-agent: *
+Allow: /
+Allow: /products/
+Allow: /categories/
+Allow: /track-order/
+
+# Disallow admin and private routes
+Disallow: /account/
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.pdf$
+Disallow: /?*
+Disallow: /*?*sort=
+Disallow: /*?*page=
+Disallow: /*?*filter=
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://marmara.shop/sitemap.xml
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: BadBot
+User-agent: EvilBot
+Disallow: /
+
+# Allow all other bots by default
+User-agent: *
+Allow: /
