@@ -1,0 +1,50 @@
+{
+  "name": "marmara-shop-backend",
+  "version": "1.0.0",
+  "description": "MarmaraShop - MedusaJS backend with MongoDB integration",
+  "private": true,
+  "scripts": {
+    "dev": "medusa develop",
+    "build": "medusa build",
+    "start": "medusa start",
+    "seed": "node --require ts-node/register src/scripts/seed.ts",
+    "migrate": "medusa migrations run",
+    "migrations:generate": "medusa migrations generate",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@medusajs/medusa": "^2.0.0",
+    "@medusajs/mongo": "^2.0.0",
+    "@medusajs/medusa-cli": "^2.0.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.0",
+    "dotenv": "^16.3.0",
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.0",
+    "jsonwebtoken": "^9.1.0",
+    "redis": "^4.6.0",
+    "bull": "^4.11.0",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^7.0.0",
+    "joi": "^17.11.0",
+    "mongoose": "^7.5.0",
+    "typescript": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/express": "^4.17.0",
+    "@types/jest": "^29.5.0",
+    "ts-node": "^10.9.0",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.0",
+    "jest": "^29.7.0",
+    "@types/bcryptjs": "^2.4.0"
+  },
+  "medusa": {
+    "plugins": []
+  }
+}
