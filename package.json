@@ -1,0 +1,27 @@
+{
+  "name": "marmara-shop",
+  "version": "1.0.0",
+  "description": "MarmaraShop - Full-stack e-commerce platform with Next.js, MedusaJS, and MongoDB",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "admin"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "install:all": "npm install && npm install --workspace=frontend && npm install --workspace=backend && npm install --workspace=admin"
+  },
+  "keywords": [
+    "ecommerce",
+    "nextjs",
+    "medusajs",
+    "mongodb",
+    "cod-payment"
+  ],
+  "author": "",
+  "license": "MIT"
+}
