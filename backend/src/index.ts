@@ -53,6 +53,7 @@ import categoryRoutes from './api/categories.routes';
 import orderRoutes from './api/orders.routes';
 import shippingRoutes from './api/shipping.routes';
 import authRoutes from './api/auth.routes';
+import notificationRoutes from './api/notifications.routes';
 
 // Register routes
 app.use(productRoutes);
@@ -60,6 +61,7 @@ app.use(categoryRoutes);
 app.use(orderRoutes);
 app.use(shippingRoutes);
 app.use(authRoutes);
+app.use(notificationRoutes);
 
 // 404 Handler
 app.use((_req: Request, res: Response) => {
